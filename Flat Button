@@ -1,0 +1,28 @@
+.btn-primary {
+    background: none repeat scroll 0% 0% #3498DB;
+}
+  .btn-primary:hover {
+    background: none repeat scroll 0% 0% #3498DB;
+}
+.btn {
+    font-weight: 500;
+    border: medium none;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    color: #FFF !important;
+    border-radius: 0.18rem;
+    font-size: 1.5rem;
+    padding: 0px 1.5rem;
+    height: 49px;
+    line-height: 51px;
+    box-shadow: 0px -2px 0px rgba(0, 0, 0, 0.1) inset;
+}
+
+This is the part doing this:
+border-radius: 0.18rem;
