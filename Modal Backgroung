@@ -1,0 +1,8 @@
+put this in your stylesheet after the @import "bootstrap"; part.
+
+.modal-backdrop {background: none;}
+
+fyi: you can also change the color of the backdrop
+
+.modal-backdrop {background-color: green;}
+
