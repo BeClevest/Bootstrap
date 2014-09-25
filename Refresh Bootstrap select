@@ -1,0 +1,7 @@
+$('#mybutton').click(function(){
+   $('select[name=selValue]').val(1);
+   $('select[name=selValue]').change();
+});
+
+
+http://stackoverflow.com/questions/14804253/how-to-set-selected-value-on-select-using-selectpicker-plugin-from-bootstrap
