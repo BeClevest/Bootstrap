@@ -1,0 +1,52 @@
+<div class="container">
+
+
+<div class="col-md-6">
+  
+ <div class="panel panel-default">
+  <div class="panel-heading">Panel heading without title</div>
+  <div class="panel-body">
+    Panel content
+  </div>
+  <div class="panel-footer">Panel footer</div>
+</div>
+  
+</div>
+  
+  <div class="col-md-6">
+  
+  <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          A
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+A
+      </div>
+       <div class="panel-footer">Panel footer</div>
+    </div>
+  </div>
+  
+</div></div>
+</div>
+
+
+/* CSS used here will be applied after bootstrap.css */
+body{padding:25px;}
+.panel-footer{z-index:1;}
+
+.panel-collapse>.panel-body {
+border-top-color: #ddd;
+    border :1px;
+  border-bottom-color: #ddd;
+    border-top: 1px solid #ddd;
+}
+  .panel-collapse>.panel-footer {
+
+    border-top: 1px solid #ddd;
+}
