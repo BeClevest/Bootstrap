@@ -1,0 +1,72 @@
+/* CSS used here will be applied after bootstrap.css */
+body{
+  padding:50px;}
+
+.btn{margin-left:25px;
+ border-radius: 2px;
+  border: medium none;
+}
+
+.btn-default,
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger {
+    -webkit-box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:    0px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow:         0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn-default:active,
+.btn-primary:active,
+.btn-success:active,
+.btn-info:active,
+.btn-warning:active,
+.btn-danger:active {
+    margin-top: 3px;
+    margin-bottom: -3px;
+}
+
+.btn:focus {
+  outline: none;
+  background-color:none;
+}
+
+.btn-primary {
+    background: none repeat scroll 0% 0% #3498DB;
+}
+  .btn-primary:hover {
+    background: none repeat scroll 0% 0% #3498DB;
+}
+.btns {
+    font-weight: 500;
+    border: medium none;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    color: #FFF !important;
+    border-radius: 0.18rem;
+    font-size: 1.5rem;
+    padding: 0px 1.5rem;
+    height: 49px;
+    line-height: 51px;
+    box-shadow: 0px -2px 0px rgba(0, 0, 0, 0.1) inset;
+}
+
+  
+.dropdown-menu::after {
+  position: absolute;
+  top: -6px;
+  left: 10px;
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid black;
+  border-left: 6px solid transparent;
+  content: '';
+}
