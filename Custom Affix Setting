@@ -1,0 +1,17 @@
+This is good for having two bars (Navbar and secon statues bar) at top and FIXEd
+
+<div class="row" id="stat-bar"></div>
+
+- Ass the script to your js
+
+$('#stat-bar').affix({
+  offset: {top: 50}
+});
+
+
+- May also need new css Rule (Div may break in half) as:
+
+.affix{
+    left: 0px !important;
+    right: 0px !important;
+}
