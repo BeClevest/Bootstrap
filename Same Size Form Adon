@@ -1,0 +1,8 @@
+http://stackoverflow.com/questions/18075467/twitter-bootstrap-3-input-group-addon-not-all-the-same-size
+
+http://jsfiddle.net/Dzhz4/1/
+
+.input-group-addon {
+    min-width:300px;
+    text-align:left;
+}
