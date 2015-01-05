@@ -1,0 +1,60 @@
+$('.btn-group').on('show.bs.dropdown', function (e) {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+});
+
+$('.btn-group').on('hide.bs.dropdown', function (e) {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+});
+
+ $(".dropdown-menu").on('click', 'li a', function(){
+      $(".btn:first-child").text($(this).text());
+      $(".btn:first-child").val($(this).text());
+   });
+
+
+
+
+<div class="row ">
+<div class="container">
+ <div class="btn-group btn-block">
+  <button class="col-lg-11 col-md-11 col-sm-11 col-xs-10  btn btn-danger">Navigate To Site</button>
+ 
+  <button class="col-lg-1 col-md-1 col-sm-1 col-xs-2 btn btn-danger dropdown-toggle btn-no-stytle"
+          data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+ 
+  <ul class="dropdown-menu btn-block">
+    <li class="text-center"><a href="#">Home</a></li>
+    <li class="text-center"><a href="#">Reason 2</a></li>
+    <li class="text-center"><a href="#">Reason 3</a></li>
+    <li class="text-center"><a href="#">Reason 2</a></li>
+    <li class="text-center"><a href="#">Reason 3</a></li>    
+  </ul>
+</div> 
+
+</div>
+</div>
+
+
+/* CSS used here will be applied after bootstrap.css */
+body{padding:40px;}
+.col{margin:0px; padding:0px;}
+.btn{ border-radius: 0px;}
+.dropdown-menu{
+border-radius: 0px;
+  box-shadow:none;
+  padding:0px;
+}
+.dropdown-menu>li>a {
+line-height:30px;
+}
+  .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+color: red;
+text-decoration: none;
+background-color: yellow;
+}
+.btn-no-stytle{
+ outline: none !important;
+box-shadow: none !important;
+    }
