@@ -1,0 +1,8 @@
+.btn-trans
+{
+background-color: transparent;  
+color: #428bca; 
+border: 2px solid black;
+}
+
+<button type="button" class="btn btn-trans" >Transparent Button</button>
