@@ -1,0 +1,48 @@
+
+Still need to fit the :hove efect
+
+/* CSS used here will be applied after bootstrap.css */
+
+
+.btn-trans {
+      background:none;
+      box-shadow:none;
+}  
+
+.btn-trans-default {
+     border: 2px solid #999999;
+     color:#999999;
+}
+.btn-trans-primary {
+     border: 2px solid #0044CC;
+     color:#0044CC;
+}
+.btn-trans-success {
+     border: 2px solid #51A351;
+     color:#51A351;
+}  
+
+.btn-trans-info {
+     border: 2px solid #0088CC;
+     color:#0088CC;
+} 
+.btn-trans-warning {
+     border: 2px solid #F89406;
+     color:#F89406;
+} 
+.btn-trans-danger {
+     border: 2px solid #BD362F;
+     color:#BD362F;
+} 
+
+
+<button type="button" class="btn btn-trans btn-trans-default">Transparent Button Default</button>
+<button type="button" class="btn btn-trans btn-trans-primary">Transparent Button Primary</button>
+<button type="button" class="btn btn-trans btn-trans-success">Transparent Button Success</button>
+<button type="button" class="btn btn-trans btn-trans-info">Transparent Button Info</button>
+<button type="button" class="btn btn-trans btn-trans-warning">Transparent Button Warning</button>
+<button type="button" class="btn btn-trans btn-trans-danger btn-">Transparent Button Danger</button>
+
+
+
+
