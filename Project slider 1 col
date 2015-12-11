@@ -1,0 +1,70 @@
+<!-- Head tags to include FontAwesome -->
+<head>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<div class="container">
+
+  <div class='row'>
+    <div class='col-md-offset-2 col-md-6'>
+      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+        
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
+        
+          <!-- Quote 1 -->
+          <div class="item active">
+              <div class="row">
+                <div class="col-sm-12">
+<div class="panel panel-default">
+  <div class="panel-heading">Panel heading without title</div>
+  <div class="panel-body">
+    <img src="http://www.commerciallinesinsurance.net/wp-content/uploads/2013/04/shutterstock_80910097-Custom.jpg" class="img-responsive" alt="Cinque Terre">
+ </div>
+  <div class="panel-footer">Panel footer</div>
+</div>
+                </div>
+              </div>
+          </div>
+          <!-- Quote 2 -->
+          <div class="item">
+   
+              <div class="row">
+                <div class="col-sm-12">
+<div class="panel panel-default">
+  <div class="panel-heading">Panel heading without title</div>
+  <div class="panel-body">
+        <img src="http://abidebuilding.com/wp-content//uploads/2011/12/GirlsChangeThings.jpg" class="img-responsive" alt="Cinque Terre">
+    
+  </div>
+  <div class="panel-footer">Panel footer</div>
+</div>
+                </div>
+              </div>
+          </div>
+               <!-- Quote 2 -->
+          <div class="item">
+   
+              <div class="row">
+                <div class="col-sm-12">
+<div class="panel panel-default">
+  <div class="panel-heading">Panel heading without title</div>
+  <div class="panel-body">
+        <img src="http://exclusive.multibriefs.com/images/exclusive/0826construction.jpg" class="img-responsive" alt="Cinque Terre">
+    
+  </div>
+  <div class="panel-footer">Panel footer</div>
+</div>
+                </div>
+              </div>
+          </div>
+        </div>
+        
+        <!-- Carousel Buttons Next/Prev -->
+      
+      </div>                          
+    </div>
+  </div>
+
+  <a data-slide="prev" href="#quote-carousel" class="left btn btn-default"><i class="fa fa-chevron-left"></i></a>
+        <a data-slide="next" href="#quote-carousel" class="right btn btn-default"><i class="fa fa-chevron-right"></i></a>
