@@ -1,8 +1,11 @@
+
 var collapaseFor = "project";
 var id = "accordion-"+collapaseFor;
 
- $('body').append('<div class="panel-group" id="'+id+'" role="tablist" aria-multiselectable="true"></div>');
+ $('.container').append('<div class="panel-group" id="'+id+'" role="tablist" aria-multiselectable="true"></div>');
 
 for (i = 0; i < 5; i++) {
-   $('.panel-group').append('<div class="panel panel-default"> <div class="panel-heading" role="tab" id="heading-'+collapaseFor+"-"+[i]+'"> <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#'+id+'" href="#collapse-'+collapaseFor+"-"+[i]+'" aria-expanded="true" aria-controls="collapse-'+[i]+'"> collapse title '+[i]+' </a> </h4> </div> <div id="collapse-'+collapaseFor+"-"+[i]+'" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-'+collapaseFor+"-"+[i]+'"> <div class="panel-body"> </div> </div> </div>');
+   $('.panel-group').append('<div class="panel panel-default"> <div class="panel-heading" role="tab" id="heading-'+collapaseFor+"-"+[i]+'"> <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#'+id+'" href="#collapse-'+collapaseFor+"-"+[i]+'" aria-expanded="true" aria-controls="collapse-'+[i]+'"> collapse title '+[i]+' </a> </h4> </div> <div id="collapse-'+collapaseFor+"-"+[i]+'" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-'+collapaseFor+"-"+[i]+'"> <div class="panel-body"> </div> </div> </div>');
 }
+var data = $('.container').html();
+console.log(data);
