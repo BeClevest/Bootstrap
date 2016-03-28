@@ -1,0 +1,20 @@
+Targetting all Desktop
+
+These queries are based on devices "Screen Resolution". ["Screen Resolution" and "Browser Window Resolution" are diffrent]
+Min-Width: Refers to everything greater than or equal to the amount given. 
+Max-Width: Refers to everything less than or equal to the amount given.
+
+/*--------------------------------------------------------------------- 10 - 12*/
+@media only screen and (min-width : 1024px)  {body{background:AliceBlue;}}
+/*-------------------------------------------------------------------------- 13*/
+@media only screen and (min-width : 1280px)  {body{background:AntiqueWhite;}}
+/*-------------------------------------------------------------------------- 15*/
+@media only screen and (min-width : 1366px)  {body{background:purple;}}
+/*-------------------------------------------------------------------------- 19*/
+@media only screen and (min-width : 1440px)  {body{background:yellow;}}
+/*-------------------------------------------------------------------------- 20*/
+@media only screen and (min-width : 1600px)  {body{background:khaki;}}
+/*-------------------------------------------------------------------------- 22*/
+@media only screen and (min-width : 1680px)  {body{background:green;}}
+/*--------------------------------------------------------------------- 23 - 24*/
+@media only screen and (min-width : 1920px)  {body{background:blue;}}
