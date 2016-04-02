@@ -1,0 +1,17 @@
+http://stackoverflow.com/questions/33814183/how-to-pass-html-content-in-bootstrap-3-popover-through-data-content-attribute
+
+
+<div class="container">
+  <button type="button" class="btn btn-success btn-xs" data-container="body" data-toggle="popover" data-placement="top" data-content="In this title I have <b>bold</b> text" data-html="true"> 
+    <i class="fa fa-question"></i>
+  </button>
+</div>
+
+
+$("[data-toggle=popover]").popover();
+
+/* CSS used here will be applied after bootstrap.css */
+body{padding:100px;}
+
+Demo:
+http://www.bootply.com/a847bhwZlW
