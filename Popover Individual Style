@@ -1,0 +1,49 @@
+http://stackoverflow.com/questions/34816589/adding-style-to-specific-popover-in-bootstrap
+
+
+<div class="container">
+  <button type="button" class="btn btn-default"
+  id="pop-one">Pop 1 </button>
+  
+  <button type="button" class="btn btn-default" id="pop-two">Pop 2 </button>
+</div>
+
+
+
+#pop-one + .popover .popover-content{background:red;}
+
+#pop-two + .popover {background:green;}
+
+
+$("#pop-one").popover({
+         placement: function() { return $(window).width() < 975 ? 'bottom' : 'right'; },
+        html: 'true',
+        title : '<span class="" style=""><strong>Pop One</strong></span>'+
+                '<button type="button"  class="btn btn-default close"\
+     onclick="$("#pop-captcha").popover("hide");">x</button>',
+        content : '<h4>This is Pop One</h4>',
+  }).on('shown.bs.popover', function() {
+    var popup = $(this);
+    $(this).parent().find("div.popover .close").click(function() {
+      popup.click();
+    });
+  }); 
+
+
+$("#pop-two").popover({
+         placement: function() { return $(window).width() < 975 ? 'bottom' : 'right'; },
+        html: 'true',
+        title : '<span class="" style=""><strong>Pop Two</strong></span>'+
+                '<button type="button"  class="btn btn-default close"\
+     onclick="$("#pop-captcha").popover("hide");">x</button>',
+               content : '<h4>This is Pop Two</h4>',
+  }).on('shown.bs.popover', function() {
+    var popup = $(this);
+    $(this).parent().find("div.popover .close").click(function() {
+      popup.click();
+    });
+  }); 
+  
+  
+Demo:
+http://codepen.io/anon/pen/obGZMw
