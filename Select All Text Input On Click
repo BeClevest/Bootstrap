@@ -1,0 +1,8 @@
+
+<input type="text" name="email" class="focus-select" value="your@email.com">
+<input type="password" name="password" class="focus-select" value="password">
+
+
+$(document).on('click', '.focus-select', function(){
+  $(this).select();
+});
