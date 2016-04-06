@@ -1,0 +1,40 @@
+Here are my proposed solutions, since Google are insisting on overriding every work-around that people seem to make.
+
+Option 1 - select all text on click
+Set the values of the inputs to an example for your user (e.g. your@email.com), or the label of the field (e.g. Email) and add a class called focus-select to your inputs:
+
+<input type="text" name="email" class="focus-select" value="your@email.com">
+<input type="password" name="password" class="focus-select" value="password">
+And here's the jQuery:
+
+$(document).on('click', '.focus-select', function(){
+  $(this).select();
+});
+I really can't see Chrome ever messing with values. That'd be crazy. So hopefully this is a safe solution.
+
+Option 2 - set the email value to a space, then delete it
+Assuming you have two inputs, such as email and password, set the value of the email field to " " (a space), and give it a class of autocomplete-off, then clear this with JavaScript. You can leave the password value empty.
+
+If the user doesn't have JavaScript for some reason, ensure you trim their input server-side (you probably should be anyway), in case they don't delete the space.
+
+Here's the jQuery:
+
+$(document).ready(function() {
+  setTimeout(function(){
+    $('.autocomplete-off').val('');
+  }, 15);
+});
+I set a timeout to 15 because 5 seemed to work occasionally in my tests, so trebling this number seems like a safe bet.
+
+Failing to set the initial value to a space results in Chrome leaving the input as yellow, as if it has auto-filled it.
+
+Option 3 - hidden inputs
+Put this at the beginning of the form:
+
+<!-- Avoid Chrome autofill -->
+<input class="hide">
+<input type="password" class="hide">
+CSS:
+
+.hide{ display:none; }
+Ensure you keep the HTML note so that your other developers don't delete it!
